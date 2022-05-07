@@ -1,0 +1,6 @@
+<a href="{% url 'todos' %}">Go Back</a>
+<form method="post">
+  {% csrf_token %}
+  <p>Do you really want to delete {{todo}}?</p>
+  <input type="submit" value="Delete">
+</form>
